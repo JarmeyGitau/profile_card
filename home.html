@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <article class="profile-card" data-testid="test-profile-card">
+    <figure class="avatar-section">
+      <img src="jj.png" alt="User avatar" data-testid="test-user-avatar">
+      <nav class="social-links" data-testid="test-user-social-links">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </nav>
+    </figure>
+
+    <div class="info-section">
+      <header>
+        <h2 data-testid="test-user-name">James Gitau</h2>
+      </header>
+
+      <p data-testid="test-user-bio">
+        I am a well driven personnel that is always ready to learn. Currently I'm a passionate computer science graduate exploring web development and data analytics.
+        I believe that every day is a leraning day.
+      </p>
+
+      <p class="time" id="userTime" data-testid="test-user-time"></p>
+
+      <section class="lists">
+        <div>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Watching and playing football</li>
+            <li>Hiking and travelling</li>
+            <li>Bowling</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Disloyalty</li>
+            <li>Procrastination</li>
+            <li>Dishonesty</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
